@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------ */
+*,*:after,*:before{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrap{
+  width: 1920px;
+	margin: 0 auto;
+}
+
+/* line-height 行高統一設定 */
+
+.top_nav li,
+.nav a,
+.item p,
+.item li,
+.table_content table,
+.form_left input,
+.form_right textarea,
+.footer li{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banner h2,
+.item h3,
+.table_content h3,
+.form_submit h3,
+.submit_form,
+.submit_css{
+    line-height: 1.2;
+}
+
+/* a 連結互動 */
+
+.top_nav a:hover,
+.footer a:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.nav a:hover{
+    border-bottom: 4px solid #00CC99;
+}
+
+.submit_css:hover{
+    background-color: #484a42;
+}
+
+/* top_nav 頂部連結區域 */
+.top_nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    
+    padding: 4px 405px;
+    background-color: #F6F6F8;
+}
+
+.top_nav li:first-child{
+    padding-right: 12px;
+    border-right:1px solid #CCCCCC;
+}
+
+.top_nav img{
+    margin-right: 5px;
+    vertical-align: middle;
+
+    border-radius: 50%;
+}
+
+.top_nav a{
+    vertical-align: middle;
+}
+
+.fb{
+    color: #4267B2;
+}
+
+.twitter{
+    color: #1DA1F2;
+}
+
+/* header 網頁標頭區域 */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0px 405px;
+}
+
+.header h1 a{
+    display: block;
+    width: 224px;
+    height: 53px;
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.nav a{
+    display: block;
+
+    font-weight: bold;
+    color: #00251A;
+
+    padding: 26px 5px 22px 5px;
+    border-bottom: 4px solid white;
+}
+
+/* banner 網頁中間標語 */
+.banner{
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+    background-size: cover;
+    background-position: center;
+
+    padding: 125px 0px;
+}
+
+.banner h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+
+    background-color: rgb(255, 255, 255, 0.15);
+
+    padding: 27px 498px;
+}
+
+/* class_content 網頁課程說明 */
+.content{
+    padding:60px  405px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.class_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.item{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2);
+    
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+.item li{
+    list-style: inside;
+}
+
+/* table_content 網頁課程優劣 */
+.table_content h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+.table_content table{
+    text-align: left;
+    table-layout: fixed;
+}
+
+.table_content table th,
+.table_content table td{
+    padding: 6px 130px 6px 10px;
+    font-weight: bold;
+}
+
+.table_content table tr{
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.advantage{
+    color: #00CC99;
+}
+
+/* form_submit 網頁詢問表單 */
+.form_submit{
+    padding: 36px 0px;
+
+    background: linear-gradient(#E4FFF8,#A2DDCE);
+}
+
+.form_submit h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+.submit_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    font-size: 16px;
+}
+
+.form_css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form_left,
+.form_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_left input,
+.form_right textarea{
+    width: 350px;
+    padding: 7px 10px;
+    margin: 7px 0 10px 0;
+    font-size: 18px;
+
+    border-radius: 3px;
+    border: 1px solid #AAAAAA;
+}
+
+.form_right textarea{
+    height: 200px;
+    resize: none;
+}
+
+.submit_css{
+    width: 159px;
+    cursor: pointer;
+
+    border-radius: 3px;
+    border: 1px solid #00251A;
+    background-color: #00251A;
+    color: white;
+
+    padding: 9px 64px;
+}
+
+/* footer 網頁尾部 */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 405px;
+}
+
+.footer li{
+    display: flex;
+}
+
+.footer a{
+    color: #00CC99;
+}
