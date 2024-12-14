@@ -62,7 +62,7 @@ a{
 
 .wrap{
   width: 1920px;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* line-height 行高統一設定 */
@@ -248,11 +248,13 @@ a{
 .table_content table{
     text-align: left;
     table-layout: fixed;
+
+    width:100%;
 }
 
 .table_content table th,
 .table_content table td{
-    padding: 6px 130px 6px 10px;
+    padding: 6px 10px;
     font-weight: bold;
 }
 
